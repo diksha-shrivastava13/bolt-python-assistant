@@ -29,7 +29,7 @@ def call_llm(
     return markdown_to_slack(response.choices[0].message.content)
 
 
-# Conversion from OpenAI markdown to Slack mrkdwn
+# Conversion from OpenAI Markdown to Slack mrkdwn
 # See also: https://api.slack.com/reference/surfaces/formatting#basics
 def markdown_to_slack(content: str) -> str:
     # Split the input string into parts based on code blocks and inline code
